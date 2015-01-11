@@ -43,6 +43,12 @@ html {
 	display: none !important;
 }
 
+/* Use .no-pdf to hide sections from pdf printout */
+.reveal .slides section.no-pdf {
+	display: none !important;
+}
+
+
 /* SECTION 3: Set body font face, size, and color.
    Consider using a serif font for readability. */
 body, p, td, li, div {
