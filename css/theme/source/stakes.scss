@@ -1,0 +1,97 @@
+/**
+ * Stakes' theme for reveal.js.
+ * Author: Jay Stakelon
+ */
+
+
+// Default mixins and settings -----------------
+@import "../template/mixins";
+@import "../template/settings";
+// ---------------------------------------------
+
+
+
+// Include theme-specific fonts
+@import url(http://fonts.googleapis.com/css?family=Karla:400,400italic,700,700italic);
+
+
+
+/**
+ * Solarized colors by Ethan Schoonover
+ */
+html * {
+	color-profile: sRGB;
+	rendering-intent: auto;
+}
+
+$base03:    #FFFFFF;
+$base02:    #f3f6f7;
+$base01:    #CFD8DC;
+
+$base00:    #607D8B;
+
+$base0:     #455A64;
+$base1:     #212121;
+$base2:     #000000;
+
+$blue00: 	#B3E5FC;
+$blue0:		#03A9F4;
+$blue1:		#0288D1;
+
+$amber:		#FFC107;
+$cyan:		#00BCD4;
+$green:		#8BC34A;
+$pink:		#E91E63;
+
+// $yellow:    #b58900;
+// $orange:    #cb4b16;
+// $red:       #dc322f;
+// $magenta:   #d33682;
+// $violet:    #6c71c4;
+// $blue:      #268bd2;
+// $cyan:      #2aa198;
+// $green:     #859900;
+
+// Override theme settings (see ../template/settings.scss)
+$backgroundColor: $base02;
+
+$mainColor: $base0;
+$headingColor: $base0;
+
+$mainFont: 'Karla', sans-serif;
+
+$linkColor: $blue0;
+$linkColorHover: $blue00;
+
+$headingFont: 'Karla', sans-serif;
+$headingTextShadow: none;
+$headingLetterSpacing: -0.03em;
+$headingTextTransform: none;
+$headingFontWeight: bold;
+
+$heading1Size: 80px;
+
+$selectionBackgroundColor: $pink;
+$mainFontSize: 30px;
+
+
+// Theme template ------------------------------
+@import "../template/theme";
+// ---------------------------------------------
+
+section.has-dark-background {
+	&, h1, h2, h3, h4, h5, h6 {
+		color: #fff;
+	}
+}
+
+.reveal h1 {
+	text-transform: uppercase;
+	letter-spacing: -0.05em;
+}
+
+.reveal h6 {
+	font-weight: normal;
+	font-size: 24px;
+	color: $base02;
+}
